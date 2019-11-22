@@ -1,7 +1,7 @@
 import mysql.connector
 from DBUtils.PooledDB import PooledDB
 
-pool = PooledDB(mysql.connector, 5, host='localhost', user='root', passwd='1234', db='ex2', port=3306)
+pool = PooledDB(mysql.connector, user='root', passwd='1234', db='ex2')
 con = pool.connection()
 cursor = con.cursor()
 
