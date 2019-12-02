@@ -1,5 +1,5 @@
 import mysql.connector
-cnn = mysql.connector.connect(user='root',passwd='1234',database='ex2')
+cnn = mysql.connector.connect(user='root', passwd='1234', database='ex2')
 cursor = cnn.cursor()
 
 #查询staff表中的姓名，职工号和年龄
@@ -39,7 +39,7 @@ for each in cursor:
 
 print('================================')
 
-#动态SQL
+#输入语句进行查询
 query_string = input("请输入语句：")
 cursor.execute(query_string)
 for each in cursor:
